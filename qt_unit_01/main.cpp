@@ -2,6 +2,9 @@
 
 #include <QApplication>
 #include <QPushButton>
+#include <QtGui>
+#include <QtWidgets>
+#include <string>
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +18,11 @@ int main(int argc, char *argv[])
     button.resize(200, 200);
 
     QObject::connect(&button, &QPushButton::clicked, &button, &QPushButton::hide);
+
+    w.setWindowTitle("俊意的程序-0.1");
+    w.setWindowIcon(QIcon("E:\\github_pro\\data\\icons8-soil-80"));
+    w.resize(QApplication::desktop()->width() * 0.5, QApplication::desktop()->height() * 0.5);
+    w.move(QApplication::desktop()->width() * 0.05, QApplication::desktop()->height() * 0.01);
 
     w.show();
     return a.exec();
