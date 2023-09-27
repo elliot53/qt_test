@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     QObject::connect(&button, &QPushButton::clicked, &button, &QPushButton::hide);
 
     w.setWindowTitle("俊意的程序-0.1");
-    w.setWindowIcon(QIcon("E:\\github_pro\\data\\icons8-soil-80"));
+    w.setWindowIcon(QIcon("..\\data\\icons8-soil-80"));
     w.resize(QApplication::desktop()->width() * 0.5, QApplication::desktop()->height() * 0.5);
     w.move(QApplication::desktop()->width() * 0.05, QApplication::desktop()->height() * 0.01);
 
